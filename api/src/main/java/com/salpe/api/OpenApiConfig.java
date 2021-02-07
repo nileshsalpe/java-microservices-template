@@ -18,8 +18,8 @@ public class OpenApiConfig {
                                 type(SecurityScheme.Type.HTTP).
                                 scheme("bearer").
                                 bearerFormat("JWT")))
-                .addServersItem(new Server().description("prod").url("http://prod.sac.sap.com/"))
-                .addServersItem(new Server().description("pre-prod").url("http://dev.sac.sap.com/"))
+                .addServersItem(new Server().description("prod").url("http://prod.acme.com/"))
+                .addServersItem(new Server().description("pre-prod").url("http://dev.acme.com/"))
                 .addServersItem(new Server().description("dev").url("http://localhost:8080/"))
                 .info(new Info()
                         .title("My Api")
